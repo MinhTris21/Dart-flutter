@@ -1,24 +1,21 @@
 import 'package:flutter/material.dart';
 
-String getFullName(String firstName, String surfaceName) {
-  //return firstName + ' ' + surfaceName;
-  return '$firstName $surfaceName';
-}
-
-void printMyName() {}
-const age = 20;
-const doubleAge = age * 2;
 void main() {
   runApp(const MyApp());
 }
 
+void test() {
+  const things = {'tris', 1};
+  print(things);
+}
+
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
-
   // This widget is the root of your application.
+
   @override
   Widget build(BuildContext context) {
-    print(getFullName('Minh', 'Tris21'));
+    test();
     return MaterialApp(
       title: 'MinhTris',
       theme: ThemeData(
