@@ -5,8 +5,9 @@ void main() {
 }
 
 void test() {
-  const things = {'tris', 1};
-  print(things);
+  var person = {'age': 20, 'name': 'MinhTris'};
+  person['age'] = 230;
+  print(person['age']);
 }
 
 class MyApp extends StatelessWidget {
