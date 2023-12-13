@@ -19,4 +19,5 @@ samples, guidance on mobile development, and a full API reference.
 Start in 10/12/2023 ----- unknown
 
 https://www.youtube.com/watch?v=6b_ydHCJ974&list=PL6yRaaP0WPkVtoeNIGqILtRAgd3h2CNpT&index=6
+
 37 hours courses
