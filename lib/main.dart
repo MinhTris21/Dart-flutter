@@ -4,31 +4,27 @@ void main() {
   runApp(const MyApp());
 }
 
-class Person {
-  final String firstName;
-  final String lastName;
-
-  Person(this.firstName, this.lastName);
+class PairString {
+  final String value1;
+  final String value2;
+  PairString(this.value1, this.value2);
 }
 
-class Cat extends Object {
-  final String name;
-  Cat(this.name);
+class PairInt {
+  final int value1;
+  final int value2;
+  PairInt(this.value1, this.value2);
 }
 
-extension FullName on Person {
-  String get fullname => '$firstName $lastName';
-}
-
-extension Run on Cat {
-  void run() {
-    print('The cat name $name is running');
-  }
+class Pair<A, B> {
+  final A value1;
+  final B value2;
+  Pair(this.value1, this.value2);
 }
 
 void test() {
-  final mySelf = Person('Minh', 'Tris');
-  print(mySelf.fullname);
+  final name = Pair('Minh', 210);
+  print(name.value2);
 }
 
 class MyApp extends StatelessWidget {
