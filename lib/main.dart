@@ -4,10 +4,31 @@ void main() {
   runApp(const MyApp());
 }
 
+class Person {
+  final String firstName;
+  final String lastName;
+
+  Person(this.firstName, this.lastName);
+}
+
+class Cat extends Object {
+  final String name;
+  Cat(this.name);
+}
+
+extension FullName on Person {
+  String get fullname => '$firstName $lastName';
+}
+
+extension Run on Cat {
+  void run() {
+    print('The cat name $name is running');
+  }
+}
+
 void test() {
-  var person = {'age': 20, 'name': 'MinhTris'};
-  person['age'] = 230;
-  print(person['age']);
+  final mySelf = Person('Minh', 'Tris');
+  print(mySelf.fullname);
 }
 
 class MyApp extends StatelessWidget {
