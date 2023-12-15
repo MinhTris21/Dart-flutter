@@ -4,36 +4,12 @@ void main() {
   runApp(const MyApp());
 }
 
-class PairString {
-  final String value1;
-  final String value2;
-  PairString(this.value1, this.value2);
-}
-
-class PairInt {
-  final int value1;
-  final int value2;
-  PairInt(this.value1, this.value2);
-}
-
-class Pair<A, B> {
-  final A value1;
-  final B value2;
-  Pair(this.value1, this.value2);
-}
-
-void test() {
-  final name = Pair('Minh', 210);
-  print(name.value2);
-}
-
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
   // This widget is the root of your application.
 
   @override
   Widget build(BuildContext context) {
-    test();
     return MaterialApp(
       title: 'MinhTris',
       theme: ThemeData(
